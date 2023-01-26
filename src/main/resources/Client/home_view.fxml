@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="400" minWidth="600" prefHeight="720.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.HomeViewController">
+    <children>
+        <ImageView fx:id="image" fitHeight="307.0" fitWidth="415.0" layoutX="480.0" layoutY="191.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="222.0" AnchorPane.rightAnchor="129.0" />
+      <VBox alignment="CENTER" layoutX="32.0" layoutY="87.0" prefHeight="164.0" prefWidth="248.0" spacing="10.0" AnchorPane.leftAnchor="32.0" AnchorPane.topAnchor="87.0">
+         <children>
+            <Label text="View Movies">
+               <font>
+                  <Font size="17.0" />
+               </font></Label>
+            <Button defaultButton="true" mnemonicParsing="false" onAction="#ByAllAction" prefHeight="25.0" prefWidth="203.0" text="All Movies" />
+            <Button minWidth="200.0" mnemonicParsing="false" onAction="#ByRecentAction" prefHeight="25.0" prefWidth="200.0" text="Most Recent Movies" />
+            <Button minWidth="200.0" mnemonicParsing="false" onAction="#ByMaxRevAction" text="Maximum Revenue" />
+            <Button minWidth="200.0" mnemonicParsing="false" onAction="#ByTotalAction" text="Total Profit" />
+         </children>
+      </VBox>
+      <VBox alignment="CENTER" layoutX="42.0" layoutY="297.0" prefHeight="188.0" prefWidth="225.0" spacing="10.0" AnchorPane.leftAnchor="42.0" AnchorPane.topAnchor="297.0">
+         <children>
+            <Label text="Search Movies">
+               <font>
+                  <Font size="16.0" />
+               </font></Label>
+            <Button minWidth="200.0" mnemonicParsing="false" onAction="#ByTitleAction" text="By Title" />
+            <Button layoutX="10.0" layoutY="96.0" minWidth="200.0" mnemonicParsing="false" onAction="#ByRelYearAction" text="By Release Year" />
+            <Button layoutX="10.0" layoutY="271.0" minWidth="200.0" mnemonicParsing="false" onAction="#ByGenreAction" text="By Genre" />
+            <Button layoutX="10.0" layoutY="96.0" minWidth="200.0" mnemonicParsing="false" onAction="#ByRuntimeAction" text="By Runtime" />
+         </children>
+      </VBox>
+      <VBox alignment="CENTER" layoutX="48.0" layoutY="485.0" prefHeight="140.0" prefWidth="215.0" spacing="10.0">
+         <children>
+            <Label prefHeight="25.0" prefWidth="83.0" text="Edit Movies">
+               <font>
+                  <Font size="16.0" />
+               </font></Label>
+            <Button mnemonicParsing="false" onAction="#OnAddClick" prefHeight="25.0" prefWidth="196.0" text="Add Movie" />
+            <Button mnemonicParsing="false" onAction="#OnTransferClick" prefHeight="25.0" prefWidth="194.0" text="Transfer Movie" />
+         </children>
+      </VBox>
+        <Label fx:id="message" layoutX="471.0" layoutY="53.0" prefHeight="38.0" prefWidth="300.0" AnchorPane.rightAnchor="253.0" AnchorPane.topAnchor="53.0">
+            <font>
+                <Font size="28.0" />
+            </font>
+        </Label>
+        <Button fx:id="button" layoutX="803.0" layoutY="645.0" mnemonicParsing="false" onAction="#logoutAction" prefHeight="25.0" prefWidth="125.0" text="Logout" AnchorPane.bottomAnchor="50.0" AnchorPane.rightAnchor="96.0" />
+    </children>
+</AnchorPane>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="720.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.AddMovieViewController">
+   <children>
+      <Button layoutX="862.0" layoutY="655.0" mnemonicParsing="false" onAction="#OnBackClick" prefHeight="25.0" prefWidth="95.0" text="Back" />
+      <Label layoutX="99.0" layoutY="76.0" prefHeight="32.0" prefWidth="255.0" text="Enter Movie Details :">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <HBox alignment="CENTER" layoutX="83.0" layoutY="130.0" prefHeight="32.0" prefWidth="466.0">
+         <children>
+            <Label prefHeight="20.0" prefWidth="165.0" text="Title :" textAlignment="CENTER">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="titleInput" onAction="#OnCheckClick" prefHeight="25.0" prefWidth="258.0" promptText="title" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="83.0" layoutY="208.0" prefHeight="32.0" prefWidth="466.0">
+         <children>
+            <Label prefHeight="20.0" prefWidth="168.0" text="Genre(comma separated) :" textAlignment="CENTER">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="genreInput" prefHeight="25.0" prefWidth="258.0" promptText="genre1,genre2,genre3" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="83.0" layoutY="168.0" prefHeight="32.0" prefWidth="466.0">
+         <children>
+            <Label prefHeight="20.0" prefWidth="166.0" text="Release Year :" textAlignment="CENTER">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="relYrInput" prefHeight="25.0" prefWidth="258.0" promptText="1990" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="83.0" layoutY="246.0" prefHeight="32.0" prefWidth="466.0">
+         <children>
+            <Label prefHeight="20.0" prefWidth="167.0" text="Running Time(Minutes) :" textAlignment="CENTER">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="runtimeInput" prefHeight="25.0" prefWidth="258.0" promptText="120" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="83.0" layoutY="285.0" prefHeight="32.0" prefWidth="466.0">
+         <children>
+            <Label prefHeight="20.0" prefWidth="168.0" text="Budget :" textAlignment="CENTER">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="budgetInput" prefHeight="25.0" prefWidth="258.0" promptText="6000000" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="83.0" layoutY="328.0" prefHeight="32.0" prefWidth="466.0">
+         <children>
+            <Label prefHeight="20.0" prefWidth="167.0" text="Revenue" textAlignment="CENTER">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="revenueInput" prefHeight="25.0" prefWidth="258.0" promptText="7000000" />
+         </children>
+      </HBox>
+      <Button layoutX="190.0" layoutY="406.0" mnemonicParsing="false" onAction="#OnAddMovieClick" prefHeight="25.0" prefWidth="200.0" text="Add Movie" />
+      <Button layoutX="549.0" layoutY="134.0" mnemonicParsing="false" onAction="#OnCheckClick" prefHeight="20.0" prefWidth="75.0" text="Check" />
+      <Button layoutX="740.0" layoutY="655.0" mnemonicParsing="false" onAction="#OnResetClick" prefHeight="25.0" prefWidth="95.0" text="Reset" />
+   </children>
+</AnchorPane>

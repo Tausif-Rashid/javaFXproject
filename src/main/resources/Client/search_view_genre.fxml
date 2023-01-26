@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="720.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.SearchViewGenreController">
+   <children>
+      <TableView fx:id="tableView" layoutX="72.0" layoutY="239.0" prefHeight="321.0" prefWidth="879.0" />
+      <Button layoutX="454.0" layoutY="662.0" mnemonicParsing="false" onAction="#OnBackClick" prefHeight="25.0" prefWidth="115.0" text="Back" />
+      <Label layoutX="72.0" layoutY="40.0" prefHeight="17.0" prefWidth="399.0" text="Select The Required Genre :">
+         <font>
+            <Font size="21.0" />
+         </font></Label>
+      <CheckBox fx:id="checkAnimation" layoutX="72.0" layoutY="88.0" mnemonicParsing="false" onAction="#OnAnimationCheck" text="Animation">
+         <font>
+            <Font size="15.0" />
+         </font></CheckBox>
+      <CheckBox fx:id="checkComedy" layoutX="199.0" layoutY="88.0" mnemonicParsing="false" onAction="#OnComedyCheck" text="Comedy">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="checkFamily" layoutX="302.0" layoutY="88.0" mnemonicParsing="false" onAction="#OnFamilyCheck" text="Family">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="checkAdventure" layoutX="395.0" layoutY="88.0" mnemonicParsing="false" onAction="#OnAdventureCheck" text="Adventure">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="checkFantasy" layoutX="512.0" layoutY="88.0" mnemonicParsing="false" onAction="#OnFantasyCheck" text="Fantasy">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="checkAction" layoutX="603.0" layoutY="88.0" mnemonicParsing="false" onAction="#OnActionCheck" text="Action">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="checkCrime" layoutX="696.0" layoutY="88.0" mnemonicParsing="false" onAction="#OnCrimeCheck" text="Crime">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="checkDrama" layoutX="780.0" layoutY="88.0" mnemonicParsing="false" onAction="#OnDramaCheck" text="Drama">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="checkMystery" layoutX="72.0" layoutY="128.0" mnemonicParsing="false" onAction="#OnMysteryCheck" text="Mystery">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="checkThriller" layoutX="200.0" layoutY="128.0" mnemonicParsing="false" onAction="#OnThrillerCheck" text="Thriller">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="checkRomance" layoutX="301.0" layoutY="128.0" mnemonicParsing="false" onAction="#OnRomanceCheck" text="Romance">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="checkHorror" layoutX="399.0" layoutY="128.0" mnemonicParsing="false" onAction="#OnHorrorCheck" text="Horror">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="checkHistory" layoutX="512.0" layoutY="128.0" mnemonicParsing="false" onAction="#OnHistoryCheck" text="History">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="checkWar" layoutX="603.0" layoutY="128.0" mnemonicParsing="false" onAction="#OnWarCheck" text="War">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="checkScienceFiction" layoutX="696.0" layoutY="128.0" mnemonicParsing="false" onAction="#OnScienceFictionCheck" text="Science Fiction">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </CheckBox>
+   </children>
+</AnchorPane>

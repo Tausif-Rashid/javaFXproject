@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="720.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.TableViewController">
+
+    <children>
+      <Label fx:id="tableLabel" layoutX="436.0" layoutY="53.0" prefHeight="30.0" prefWidth="212.0" text="Label" AnchorPane.leftAnchor="436.0" AnchorPane.topAnchor="53.0">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+        <TableView fx:id="tableView" layoutX="52.0" layoutY="89.0" prefHeight="480.0" prefWidth="912.0" AnchorPane.leftAnchor="52.0" AnchorPane.topAnchor="89.0" />
+      <Button layoutX="436.0" layoutY="658.0" mnemonicParsing="false" onAction="#OnBackClick" prefHeight="26.0" prefWidth="153.0" text="Back" AnchorPane.bottomAnchor="36.0" AnchorPane.leftAnchor="436.0" />
+      <Label fx:id="profitTotal" layoutX="52.0" layoutY="582.0" prefHeight="35.0" prefWidth="356.0" text="Label">
+         <font>
+            <Font size="24.0" />
+         </font></Label>
+      <Button layoutX="885.0" layoutY="659.0" mnemonicParsing="false" onAction="#OnReloadClick" text="Reload" />
+    </children>
+</AnchorPane>

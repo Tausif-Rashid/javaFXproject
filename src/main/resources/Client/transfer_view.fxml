@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="720.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.TransferViewController">
+
+    <children>
+        <TableView fx:id="tableView" layoutX="124.0" layoutY="143.0" prefHeight="222.0" prefWidth="775.0" />
+        <TextField fx:id="userInput" layoutX="217.0" layoutY="106.0" prefHeight="25.0" prefWidth="295.0" />
+        <Label layoutX="124.0" layoutY="108.0" prefHeight="20.0" prefWidth="111.0" text="Enter Title :">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+        <Button layoutX="534.0" layoutY="105.0" mnemonicParsing="false" onAction="#OnSearchClick" prefHeight="25.0" prefWidth="89.0" text="Search" />
+        <Button layoutX="401.0" layoutY="643.0" mnemonicParsing="false" onAction="#OnBackClick" prefHeight="39.0" prefWidth="111.0" text="Back" />
+      <Label layoutX="383.0" layoutY="28.0" prefHeight="53.0" prefWidth="288.0" text="Transfer Movie">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="235.0" layoutY="440.0" prefHeight="21.0" prefWidth="129.0" text="Enter Company:">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <Button defaultButton="true" layoutX="534.0" layoutY="643.0" mnemonicParsing="false" onAction="#OnTransferClick" prefHeight="25.0" prefWidth="118.0" text="Transfer">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Label fx:id="selectedLabel" layoutX="351.0" layoutY="485.0" prefHeight="146.0" prefWidth="522.0" text="Selected Movie: ">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <TextField fx:id="companyChoice" layoutX="368.0" layoutY="438.0" prefHeight="25.0" prefWidth="288.0" />
+      <Button layoutX="671.0" layoutY="438.0" mnemonicParsing="false" onAction="#OnSelectCompany" prefHeight="25.0" prefWidth="89.0" text="Select" />
+    </children>
+
+</AnchorPane>

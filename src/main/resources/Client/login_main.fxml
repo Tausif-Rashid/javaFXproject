@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="720.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.LoginMainController">
+    <children>
+      <Pane layoutX="275.0" layoutY="322.0" prefHeight="240.0" prefWidth="474.0">
+         <children>
+              <PasswordField fx:id="passwordText" layoutX="201.0" layoutY="126.0" prefHeight="25.0" prefWidth="220.0" />
+              <TextField fx:id="userText" layoutX="201.0" layoutY="88.0" prefHeight="25.0" prefWidth="220.0" />
+              <Label layoutX="79.0" layoutY="125.0" prefHeight="27.0" prefWidth="113.0" text="Password">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+              <Label layoutX="77.0" layoutY="87.0" prefHeight="27.0" prefWidth="120.0" text="Username">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+              <ButtonBar layoutX="63.0" layoutY="186.0" prefHeight="40.0" prefWidth="348.0">
+                  <buttons>
+                      <Button fx:id="resetButton" mnemonicParsing="false" onAction="#resetAction" prefHeight="25.0" prefWidth="126.0" text="Reset" />
+                      <Button fx:id="loginButton" defaultButton="true" mnemonicParsing="false" onAction="#loginAction" prefHeight="25.0" prefWidth="186.0" text="Login" />
+                  </buttons>
+              </ButtonBar>
+         </children>
+      </Pane>
+      <Label layoutX="278.0" layoutY="63.0" text="Welcome to Movie Database!">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+        <Button layoutX="842.0" layoutY="662.0" mnemonicParsing="false" onAction="#exitAction" prefHeight="25.0" prefWidth="120.0" text="Exit" />
+      <ImageView fx:id="loginImage" fitHeight="215.0" fitWidth="244.0" layoutX="398.0" layoutY="145.0" pickOnBounds="true" preserveRatio="true" />
+    </children>
+</AnchorPane>
